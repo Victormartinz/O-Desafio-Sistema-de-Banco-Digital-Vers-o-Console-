@@ -58,6 +58,7 @@ public class Main {
                 default:
                     System.out.println("Opção inválida, tente novamente!");
             }
+            System.out.println("teste");
 
         }
 
