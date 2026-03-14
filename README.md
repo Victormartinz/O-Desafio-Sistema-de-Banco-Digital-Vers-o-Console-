@@ -1,1 +1,1 @@
-Este é um projeto focado em lógica de programação e manipulação de estado, onde desenvolvi uma interface de console funcional para um sistema bancário simples. O objetivo foi criar uma experiência de usuário intuitiva enquanto garanto a integridade dos dados (como impedir saques negativos ou maiores que o saldo
+Este é um projeto focado em lógica de programação e manipulação de estado, onde desenvolvi uma interface de console funcional para um sistema bancário simples.
