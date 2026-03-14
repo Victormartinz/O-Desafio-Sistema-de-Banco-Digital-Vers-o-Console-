@@ -26,6 +26,7 @@ public class Main {
                 case 1:
                     System.out.println(nomeUsuario + " Seu Saldo atual é: " + saldoConta);
                     break;
+
                 case 2:
                     System.out.println("Qual Valor você deseja depositar?  ");
                     double depositoUsuario = scanner.nextInt();
@@ -34,20 +35,30 @@ public class Main {
                         System.out.println("Foi adicionado " + depositoUsuario + " ao seu Saldo da conta.");
                     }else {
                         System.out.println("Valor Incorreto!, Tente um valor mais alto!");
-                        break;
                     }
+                    break;
+
                 case 3:
                     System.out.println("Informe o valor do saque: ");
                     double sacar = scanner.nextDouble();
-                    if (sacar > 0){
+                    if (sacar > saldoConta){
+                        System.out.println("Valor incorreto, o número do saque maior que o saldo atual");
+                    }else if (sacar > 0 ){
                         saldoConta = saldoConta - sacar;
-                    }else if (sacar > saldoConta){
-                        System.out.println("Valor incorreto, o número saque maior que o saldo atual");
+                        System.out.println("Foi sacado dinheiro no valor de " + sacar + " do seu saldo ");
                     }else {
                         System.out.println("Valor incorreto, tente um valor mais alto!");
                     }
+                    break;
 
+                case 4:
+                    System.out.println("Encerrando o programa....");
+                    break;
+
+                default:
+                    System.out.println("Opção inválida, tente novamente!");
             }
+
         }
 
 
